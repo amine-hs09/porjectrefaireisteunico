@@ -23,3 +23,17 @@ project_refaire_site_unico/
 
 This repository was created with the typo `porjectrefaireisteunico`.
 The intended name is `project_refaire_site_unico`.
+
+## Available Pages
+
+- `public/index.php` - Homepage.
+- `public/services.php` - Service listing.
+- `public/team.php` - Team presentation.
+- `public/trust.php` - Client testimonials.
+- `public/contact.php` - Contact form (no email sending yet).
+- `admin/login.php` - Admin login.
+- `admin/index.php` - Protected admin area.
+
+## Database configuration
+
+Edit `includes/db.php` to match your local MySQL credentials.

@@ -30,10 +30,27 @@ The intended name is `project_refaire_site_unico`.
 - `public/services.php` - Service listing.
 - `public/team.php` - Team presentation.
 - `public/trust.php` - Client testimonials.
-- `public/contact.php` - Contact form (no email sending yet).
+- `public/contact.php` - Contact form that stores messages in the database.
 - `admin/login.php` - Admin login.
 - `admin/index.php` - Protected admin area.
+- `admin/messages.php` - List of messages received from the contact form.
 
 ## Database configuration
 
 Edit `includes/db.php` to match your local MySQL credentials.
+
+### Messages table
+
+Create a `messages` table in your database:
+
+```sql
+CREATE TABLE messages (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  subject VARCHAR(255) NOT NULL,
+  message TEXT NOT NULL,
+  status ENUM('Nouveau', 'En cours', 'Traité') DEFAULT 'Nouveau',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```

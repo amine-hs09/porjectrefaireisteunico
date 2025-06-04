@@ -18,6 +18,7 @@
         <a href="/public/team.php">Notre équipe</a>
         <a href="/public/trust.php">Ils nous font confiance</a>
         <a href="/public/contact.php">Contact</a>
+        <a href="/admin/login.php">Admin</a>
     </nav>
 </header>
 <main>

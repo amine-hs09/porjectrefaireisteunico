@@ -5,10 +5,14 @@ This repository contains the source code for rebuilding the **Unico Consult** we
 ## Local Development (XAMPP)
 
 1. Install [XAMPP](https://www.apachefriends.org/index.html).
-2. Clone or copy this repository into your `htdocs` directory.
-3. Start Apache and MySQL from the XAMPP control panel.
-4. Create a database (for example `unico`) and import any provided SQL dump.
-5. Navigate to `http://localhost/project_refaire_site_unico/public/` in your browser.
+2. Clone or copy this repository into your `htdocs` directory (usually `C:\xampp\htdocs` on Windows).
+3. Start **Apache** and **MySQL** from the XAMPP control panel.
+4. Import the `database.sql` file to create the initial database:
+   - Open phpMyAdmin from the XAMPP panel.
+   - Create a database named `unico`.
+   - Use the "Import" tab to load `database.sql` located at the project root.
+5. Update the credentials in `includes/db.php` if your MySQL user or password differs from the defaults.
+6. Navigate to `http://localhost/project_refaire_site_unico/public/` in your browser to see the site.
 
 ## Folder Structure (planned)
 
@@ -37,3 +41,10 @@ The intended name is `project_refaire_site_unico`.
 ## Database configuration
 
 Edit `includes/db.php` to match your local MySQL credentials.
+
+## Working with Visual Studio Code
+
+1. Install [Visual Studio Code](https://code.visualstudio.com/).
+2. From Visual Studio Code, choose **File > Open Folder...** and select the cloned project directory.
+3. You can now edit the PHP files directly and use the built-in terminal to run Git commands.
+4. Use the "Go Live" extension or simply refresh your browser after changes while XAMPP is running.

@@ -47,5 +47,3 @@ Edit `includes/db.php` to match your local MySQL credentials.
 
 1. Install [Visual Studio Code](https://code.visualstudio.com/).
 2. From Visual Studio Code, choose **File > Open Folder...** and select the cloned project directory.
-3. You can now edit the PHP files directly and use the built-in terminal to run Git commands.
-4. Refresh your browser after changes while XAMPP is running.

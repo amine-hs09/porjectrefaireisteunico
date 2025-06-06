@@ -1,4 +1,6 @@
 <?php include '../includes/header.php'; ?>
+<div class="container">
 <h2>Notre Équipe</h2>
-<p>Présentation de l'équipe.</p>
+<p>Unico Consult a été fondé par <strong>Otman</strong> et <strong>Farid</strong>. Nous mettons nos valeurs de rigueur et d'innovation au service de votre entreprise.</p>
+</div>
 <?php include '../includes/footer.php'; ?>

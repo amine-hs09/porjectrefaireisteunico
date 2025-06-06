@@ -14,7 +14,7 @@ This repository contains the source code for rebuilding the **Unico Consult** we
 5. Update the credentials in `includes/db.php` if your MySQL user or password differs from the defaults.
 6. Navigate to `http://localhost/project_refaire_site_unico/public/` in your browser to see the site.
 
-## Folder Structure (planned)
+## Folder Structure
 
 ```
 project_refaire_site_unico/
@@ -34,9 +34,10 @@ The intended name is `project_refaire_site_unico`.
 - `public/services.php` - Service listing.
 - `public/team.php` - Team presentation.
 - `public/trust.php` - Client testimonials.
-- `public/contact.php` - Contact form (no email sending yet).
+- `public/contact.php` - Contact form (stores messages and sends an email).
 - `admin/login.php` - Admin login.
-- `admin/index.php` - Protected admin area.
+- `admin/index.php` - Protected admin area with message count.
+- `admin/messages.php` - List contact form messages.
 
 ## Database configuration
 
@@ -46,5 +47,3 @@ Edit `includes/db.php` to match your local MySQL credentials.
 
 1. Install [Visual Studio Code](https://code.visualstudio.com/).
 2. From Visual Studio Code, choose **File > Open Folder...** and select the cloned project directory.
-3. You can now edit the PHP files directly and use the built-in terminal to run Git commands.
-4. Use the "Go Live" extension or simply refresh your browser after changes while XAMPP is running.

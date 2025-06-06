@@ -1,9 +1,10 @@
 <?php
-session_start();
-if (!isset($_SESSION['logged_in'])) {
-    header('Location: login.php');
-    exit;
-}
+require '../includes/auth.php';
+require '../includes/db.php';
+
+// Count messages in contact form
+$countStmt = $pdo->query('SELECT COUNT(*) FROM contacts');
+$messageCount = $countStmt->fetchColumn();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +14,10 @@ if (!isset($_SESSION['logged_in'])) {
 </head>
 <body>
 <h2>Bienvenue dans l'admin</h2>
-<p>Tableau de bord à venir.</p>
-<a href="logout.php">Déconnexion</a>
+<p>Vous avez <?php echo $messageCount; ?> message(s) de contact.</p>
+<nav>
+    <a href="messages.php">Voir les messages</a> |
+    <a href="logout.php">Déconnexion</a>
+</nav>
 </body>
 </html>
